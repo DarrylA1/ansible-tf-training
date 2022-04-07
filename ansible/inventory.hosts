@@ -1,8 +1,19 @@
-[web_servers]
-44.202.222.53
-44.193.198.100
-3.239.148.172
-3.239.241.53
+[alpha]
+44.195.38.161
+
+[beta]
+44.203.217.87
+
+[charlie]
+18.215.62.238
+44.199.192.234
+
+
+[web_servers:children]
+alpha
+beta
+charlie
+
 
 [web_servers:vars]
 ansible_user=ubuntu
